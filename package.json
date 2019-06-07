@@ -1,0 +1,23 @@
+{
+  "name": "booklist",
+  "version": "1.0.0",
+  "description": "website that'll track all the books I've read starting from late December of 2018",
+  "main": "app.js ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vgdiegodt990/booklistwebsite.git"
+  },
+  "author": "Diego V.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vgdiegodt990/booklistwebsite/issues"
+  },
+  "homepage": "https://github.com/vgdiegodt990/booklistwebsite#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1"
+  }
+}
