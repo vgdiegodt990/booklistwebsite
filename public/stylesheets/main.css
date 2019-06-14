@@ -1,0 +1,53 @@
+/* MAIN/BASICS */
+body {
+    background:rgb(180, 216, 236);
+    padding:0;
+    margin:0;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* FOR DECLARING VARIABLES */
+:root {
+    --main-anim-nav: color 0.7s ease;
+}
+
+/* CONTAINER */
+#container {
+	display:grid;
+	grid-template-columns:50% 50%;
+	grid-column-gap:10px;
+}
+
+/* NAVBAR */
+#mainnav {
+    background:rgb(123, 102, 38);
+}
+
+#ulnav {
+    padding:0;
+    margin:0;
+    list-style:none; 
+    display:flex;
+    justify-content:space-around;
+}
+
+.linav {
+    display:flex;
+}
+
+.linksfornav {
+    text-decoration:none;
+    font-size:2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+    color:black;
+    /* TRANSITION */
+    -webkit-transition: var(--main-anim-nav);
+    -moz-transition: var(--main-anim-nav);
+    -ms-transition: var(--main-anim-nav);
+    -o-transition: var(--main-anim-nav);
+    transition: var(--main-anim-nav);    
+}
+    .linksfornav:hover{
+        color:rgb(45, 50, 53);
+    }
