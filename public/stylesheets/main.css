@@ -1,6 +1,6 @@
 /* MAIN/BASICS */
 body {
-    background:rgb(180, 216, 236);
+    background:rgb(108, 145, 194);
     padding:0;
     margin:0;
     font-family: 'Inconsolata', monospace;
@@ -9,18 +9,22 @@ body {
 /* FOR DECLARING VARIABLES */
 :root {
     --main-anim-nav: color 0.7s ease;
+    --main-color-navfoot: rgb(55, 63, 71);
+    --main-color-imptext: rgb(202, 198, 186);
 }
 
 /* CONTAINER */
 #container {
 	display:grid;
 	grid-template-columns:50% 50%;
-	grid-column-gap:10px;
 }
 
 /* NAVBAR */
 #mainnav {
-    background:rgb(123, 102, 38);
+    background: var(--main-color-navfoot);
+    -webkit-box-shadow: -5px 3px 4px -5px rgba(0,0,0,1);
+    -moz-box-shadow: -5px 3px 4px -5px rgba(0,0,0,1);
+    box-shadow: -5px 3px 4px -5px rgba(0,0,0,1);
 }
 
 #ulnav {
@@ -28,7 +32,7 @@ body {
     margin:0;
     list-style:none; 
     display:flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
 }
 
 .linav {
@@ -37,10 +41,10 @@ body {
 
 .linksfornav {
     text-decoration:none;
-    font-size:2.5em;
+    font-size:2.2em;
     font-family: 'Montserrat', sans-serif;
     font-weight:600;
-    color:black;
+    color: var(--main-color-imptext);
     /* TRANSITION */
     -webkit-transition: var(--main-anim-nav);
     -moz-transition: var(--main-anim-nav);
@@ -49,5 +53,35 @@ body {
     transition: var(--main-anim-nav);    
 }
     .linksfornav:hover{
-        color:rgb(45, 50, 53);
+        color:rgb(134, 135, 146);
     }
+
+/* BODY/CONTENT */
+#contentwrapper {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    #contentwrapper {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    #contentwrapper {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    #contentwrapper {
+      width: 1170px;
+    }
+  }
+
+/* FOOTER */
+#mainfoot {
+    background: var(--main-color-navfoot);
+    color: var(--main-color-imptext);
+    text-align:center;
+}

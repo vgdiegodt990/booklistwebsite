@@ -12,6 +12,10 @@ app.get("/", function(req, res){
   res.render("landing");
 })
 
+app.get("/booklist", function(req, res){
+  res.render("booklist");
+})
+
 //SERVER SETUP 
 let port = process.env.PORT;
 if (port == null || port == "") {
