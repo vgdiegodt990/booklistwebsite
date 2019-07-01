@@ -56,6 +56,22 @@ body {
         color:rgb(134, 135, 146);
     }
 
+/* MEDIA QUERIES FOR NAVBAR */
+@media (max-width: 992px) {
+  #ulnav {
+    justify-content: space-around;
+  }
+  .linksfornav {
+    font-size:1.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  .linksfornav {
+    font-size:0.9em;
+  }
+}
+
 /* BODY/CONTENT */
 #contentwrapper {
     padding-right: 15px;
