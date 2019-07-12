@@ -100,4 +100,21 @@ body {
     background: var(--main-color-navfoot);
     color: var(--main-color-imptext);
     text-align:center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contactme {
+  padding:0.8em;
+}
+
+@media (max-width: 992px) {
+  .contactme {
+    font-size:0.8em;
+  }
+}
+
+@media (max-width: 576px) {
+  .contactme {
+    font-size:0.5em;
+  }
 }
